@@ -164,7 +164,8 @@ class GraphTraverser:
         result = []
         #The city we are trying to find the shortest path to
         target = target_node_name
-        #Add previous node to list, we build list in reverse, so I use insert at index 0 to maintain correct order
+        #Add previous node to list, we build list in reverse, so I use insert at index 0 to maintain correct order for display
+        #We do this in reverse because the previous node list will contain which neighbor node is on the shortest path to the start
         is_done = False
         while is_done == False:
             result.insert(0, target)
